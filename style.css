@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.conteiner h1{
+    font-family: 'PT Serif', serif;
+
+}
+.conteiner{
+    display: flex;
+    justify-content: space-around ;
+    align-items:  center;
+    padding: 2rem;
+    width:100% ;
+    box-sizing: border-box;
+}
+.somos{
+    width: 40%;
+}
+.img-cont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 4rem;
+    padding: 4rem 10rem;
+}
+.img-cont .member{
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 4rem;
+    cursor: pointer;
+    position: relative;
+}
+.member:nth-child(3n + 2){
+    margin-bottom: 0;
+    margin-top: 5rem;
+    
+}
+
+.member img{
+    width: 100%;
+}
+.member:first-child::after{
+    content: 'Es una Verga';
+    
+
+}
+.member:nth-child(2)::after{
+    content: 'El Coge Putos';
+
+}
+.member:nth-child(3)::after{
+    content: 'El Pajero';
+    right: -2rem;
+
+}
+.member:nth-child(5)::after{
+    content: 'El Cogelon';
+
+}
+.member:nth-child(4)::after{
+     content: 'El Drogo';
+
+}
+.member::after{
+    color: black;
+    position: absolute;
+    right: -5rem;
+    top: 3rem;
+    transform: rotate(90deg);
+    
+
+}
+.footer{
+    margin-top: -10px;
+    text-align: center;
+    padding: 20px;
+    color: #BDBDBD;
+
+}
+
+@media screen and (max-width:768px) {
+    .img-cont{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 3rem;
+        padding: 4rem 10rem;
+    }
+
+    
+}
